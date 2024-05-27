@@ -2,7 +2,7 @@
 
 * Студент: [Денис К](https://up.htmlacademy.ru/htmlcss/40/user/2517285).
 * Наставник: [Анна Лисененкова](https://htmlacademy.ru/profile/ankhena).
-
+* Сайт: [Проект на GitHub Pages](https://d0nkkk.github.io/2517285-sedona-40/).
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
