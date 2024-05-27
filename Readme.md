@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Денис К](https://up.htmlacademy.ru/htmlcss/40/user/2517285).
-* Наставник: `Неизвестно`.
+* Наставник: [Анна Лисененкова](https://htmlacademy.ru/profile/ankhena).
 
 ---
 
