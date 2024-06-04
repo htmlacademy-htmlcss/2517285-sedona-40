@@ -690,6 +690,7 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 133%;
+  font-family: inherit;
   color: var(--texts-texts-basic);
 
   background-color: var(--forms-elements-2);
