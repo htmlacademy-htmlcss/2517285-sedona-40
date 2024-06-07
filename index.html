@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body class="page">
-    <div class="page__shadow">
+    <div class="page__shadow page__layout">
       <header class="page__header page-header container" data-test="header">
         <nav class="page-header__main-navigation main-navigation">
           <a class="main-navigation__logo logo" href="index.html">
@@ -45,108 +45,110 @@
         </nav>
       </header>
 
-      <main class="page__content container" data-test="main">
-        <section class="hero" data-test="hero">
-          <h1 class="visually-hidden">Турестический городок Sedona</h1>
+      <div class="page__content-wrapper">
+        <main class="page__content container" data-test="main">
+          <section class="hero" data-test="hero">
+            <h1 class="visually-hidden">Турестический городок Sedona</h1>
 
-          <img class="hero__image" src="images/welcome.svg" width="458" height="352" alt="Welcome to the Gorgeous! Sedona. Because the Grand Canyon sucks!">
-        </section>
+            <img class="hero__image" src="images/welcome.svg" width="458" height="352" alt="Welcome to the Gorgeous! Sedona. Because the Grand Canyon sucks!">
+          </section>
 
-        <section class="reasons" data-test="advantages">
-          <h2 class="visually-hidden">Причины посетить нас</h2>
+          <section class="reasons" data-test="advantages">
+            <h2 class="visually-hidden">Причины посетить нас</h2>
 
-          <div class="reasons__content">
-            <p class="reasons__title">Седона — небольшой городок в Аризоне,
-              заслуживающий большего!</p>
+            <div class="reasons__content">
+              <p class="reasons__title">Седона — небольшой городок в Аризоне,
+                заслуживающий большего!</p>
 
-            <p class="reasons__description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
-          </div>
+              <p class="reasons__description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+            </div>
 
-          <ul class="reasons__list reasons__list--stripped">
-            <li class="reasons__item  reasons__item--wide">
-              <div class="reasons__item-content reasons__item-content--theme-accent">
-                <h3 class="reasons__item-title">Настоящий городок</h3>
+            <ul class="reasons__list reasons__list--stripped">
+              <li class="reasons__item  reasons__item--wide">
+                <div class="reasons__item-content reasons__item-content--theme-accent">
+                  <h3 class="reasons__item-title">Настоящий городок</h3>
 
-                <p class="reasons__item-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-              </div>
+                  <p class="reasons__item-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+                </div>
 
-              <img class="reasons__image" src="images/photo-1.jpg" width="800" height="385" alt="Город Седона">
-            </li>
-            <li class="reasons__item">
-              <div class="reasons__item-content">
-                <h3 class="reasons__item-title">Небольшая
-                  площадь</h3>
+                <img class="reasons__image" src="images/photo-1.jpg" width="800" height="385" alt="Город Седона">
+              </li>
+              <li class="reasons__item">
+                <div class="reasons__item-content">
+                  <h3 class="reasons__item-title">Небольшая
+                    площадь</h3>
 
-                <p class="reasons__item-description">Все достопримечательности находятся очень близко</p>
-              </div>
-            </li>
-            <li class="reasons__item">
-              <div class="reasons__item-content">
-                <h3 class="reasons__item-title">Красивая
-                  дорога</h3>
+                  <p class="reasons__item-description">Все достопримечательности находятся очень близко</p>
+                </div>
+              </li>
+              <li class="reasons__item">
+                <div class="reasons__item-content">
+                  <h3 class="reasons__item-title">Красивая
+                    дорога</h3>
 
-                <p class="reasons__item-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-              </div>
-            </li>
-            <li class="reasons__item">
-              <div class="reasons__item-content">
-                <h3 class="reasons__item-title">Мало
-                  туристов</h3>
+                  <p class="reasons__item-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+                </div>
+              </li>
+              <li class="reasons__item">
+                <div class="reasons__item-content">
+                  <h3 class="reasons__item-title">Мало
+                    туристов</h3>
 
-                <p class="reasons__item-description">Большинство едет в Гранд Каньон и толпится там</p>
-              </div>
-            </li>
-            <li class="reasons__item reasons__item--wide reasons__item--direction-reverse">
-              <div class="reasons__item-content reasons__item-content--theme-accent">
-                <h3 class="reasons__item-title">Там есть
-                  мост дьявола</h3>
+                  <p class="reasons__item-description">Большинство едет в Гранд Каньон и толпится там</p>
+                </div>
+              </li>
+              <li class="reasons__item reasons__item--wide reasons__item--direction-reverse">
+                <div class="reasons__item-content reasons__item-content--theme-accent">
+                  <h3 class="reasons__item-title">Там есть
+                    мост дьявола</h3>
 
-                <p class="reasons__item-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
-              </div>
+                  <p class="reasons__item-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+                </div>
 
-              <img class="reasons__image" src="images/photo-2.jpg" width="800" height="385" alt="Мост дьявола">
-            </li>
-          </ul>
-        </section>
+                <img class="reasons__image" src="images/photo-2.jpg" width="800" height="385" alt="Мост дьявола">
+              </li>
+            </ul>
+          </section>
 
-        <section class="recommendations">
-          <h2 class="visually-hidden">Наши рекомендации</h2>
+          <section class="recommendations">
+            <h2 class="visually-hidden">Наши рекомендации</h2>
 
-          <div class="recommendations__content">
-            <p class="recommendations__title">Приезжайте в Седону отдохнуть в комфорте и уюте!</p>
-            <p class="recommendations__text">Опытный персонал и качественное обслуживание!</p>
-          </div>
+            <div class="recommendations__content">
+              <p class="recommendations__title">Приезжайте в Седону отдохнуть в комфорте и уюте!</p>
+              <p class="recommendations__text">Опытный персонал и качественное обслуживание!</p>
+            </div>
 
-          <ul class="recommendations__list recommendations__list--stripped">
-            <li class="recommendations__item  recommendations__item--house">
-              <h3 class="recommendations__item-title">Жильё</h3>
+            <ul class="recommendations__list recommendations__list--stripped">
+              <li class="recommendations__item  recommendations__item--house">
+                <h3 class="recommendations__item-title">Жильё</h3>
 
-              <p class="recommendations__item-description">Рекомендуем пожить в настоящем мотеле,
-                всё как в кино!</p>
-            </li>
-            <li class="recommendations__item  recommendations__item--burger">
-              <h3 class="recommendations__item-title">Еда</h3>
+                <p class="recommendations__item-description">Рекомендуем пожить в настоящем мотеле,
+                  всё как в кино!</p>
+              </li>
+              <li class="recommendations__item  recommendations__item--burger">
+                <h3 class="recommendations__item-title">Еда</h3>
 
-              <p class="recommendations__item-description">Всегда заказывайте
-                топовый фирменный бургер, вы не разочаруетесь!</p>
-            </li>
-            <li class="recommendations__item  recommendations__item--gift">
-              <h3 class="recommendations__item-title">Сувениры</h3>
+                <p class="recommendations__item-description">Всегда заказывайте
+                  топовый фирменный бургер, вы не разочаруетесь!</p>
+              </li>
+              <li class="recommendations__item  recommendations__item--gift">
+                <h3 class="recommendations__item-title">Сувениры</h3>
 
-              <p class="recommendations__item-description">Не только китайского,
-                но и настоящего местного производства!</p>
-            </li>
-          </ul>
-        </section>
+                <p class="recommendations__item-description">Не только китайского,
+                  но и настоящего местного производства!</p>
+              </li>
+            </ul>
+          </section>
 
-        <section class="hotels" data-test="search">
-          <h2 class="visually-hidden">Забронировать гостиницу</h2>
-          <p class="hotels__title">Заинтересовались?</p>
+          <section class="hotels" data-test="search">
+            <h2 class="visually-hidden">Забронировать гостиницу</h2>
+            <p class="hotels__title">Заинтересовались?</p>
 
-          <p class="hotels__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+            <p class="hotels__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
 
-          <button class="hotels__button button button--secondary button--size-m" type="button" >Поиск гостиницы в седоне</button>
-        </section>
+            <button class="hotels__button button button--secondary button--size-m" type="button" >Поиск гостиницы в седоне</button>
+          </section>
+        </main>
 
         <section class="newsletter newsletter--theme-cover" data-test="subscribe">
           <h2 class="newsletter__title">Подпишитесь на рассылку</h2>
@@ -159,7 +161,7 @@
             <button class="newsletter-form__button button button--primary button--size-m" type="submit" >Подписаться</button>
           </form>
         </section>
-      </main>
+      </div>
 
       <footer class="page__footer page-footer container" data-test="footer">
         <ul class="page-footer__social social">

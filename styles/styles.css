@@ -1470,6 +1470,17 @@
   margin-bottom: 40px;
 }
 
+.page__layout {
+  display: grid;
+  min-height: 100vh;
+
+  grid-template-rows: auto 1fr auto;
+}
+
+.page__content-wrapper {
+  flex-grow: 1;
+}
+
 .page__shadow {
   width: 1200px;
   margin-right: auto;
