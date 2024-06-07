@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Каталог | Sedona</title>
   <link type="font/woff2" as="font" rel="preload" href="#">
-  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body class="page page--inner">
 
@@ -105,6 +105,44 @@
               </label>
             </div>
           </fieldset>
+
+          <fieldset class="filters-form__fieldset">
+            <legend class="filters-form__fieldset-caption">Стоимость, ₽:</legend>
+
+            <div class="filter-range">
+              <div class="filter-range__input-interval">
+                <div class="filter-range__input-wrapper">
+                  <label class="filter-range__input-caption" for="price-min-field">от</label>
+                  <input class="filter-range__input filter-range__input--cropping-left" type="text" name="price-min" id="price-min-field" value="0">
+                </div>
+
+                <div class="filter-range__input-wrapper">
+                  <label class="filter-range__input-caption" for="price-max-field">до</label>
+                  <input class="filter-range__input filter-range__input--cropping-right" type="text" name="price-max" id="price-max-field" value="9000">
+                </div>
+              </div>
+
+              <div class="filter-range__controls">
+                <div class="filter-range__rail">
+                  <div class="filter-range__track"></div>
+                </div>
+
+                <button class="filter-range__handle-button filter-range__handle-button-min" type="button">
+                  <span class="visually-hidden">Установить минимальную цену</span>
+                </button>
+
+                <button class="filter-range__handle-button filter-range__handle-button-max" type="button">
+                  <span class="visually-hidden">Установить максимальную цену</span>
+                </button>
+              </div>
+            </div>
+          </fieldset>
+
+          <div class="filters-form__buttons">
+            <button class="filters-form__button button button--primary button--size-s" type="submit" >Применить</button>
+
+            <button class="filters-form__button button-ghost button--size-s" type="reset">Сбросить</button>
+          </div>
         </form>
       </div>
 
@@ -135,112 +173,104 @@
           </div>
         </div>
 
-        <ul class="catalog-products__catalog catalog">
-          <li class="catalog__item">
-            <article class="product-preview">
-              <a class="product-preview__link" href="#">
-                <h3 class="product-preview__title">Amara Resort & Spa</h3>
+        <div class="catalog-products__catalog catalog">
+          <article class="product-preview">
+            <a class="product-preview__link" href="#">
+              <h3 class="product-preview__title">Amara Resort & Spa</h3>
 
-                <img class="product-preview__image" src="images/hotel-1.jpg" width="300" height="212" alt="" >
-              </a>
+              <img class="product-preview__image" src="images/hotel-1.jpg" width="300" height="212" alt="" >
+            </a>
 
-              <p class="product-preview__category">Гостиница</p>
-              <p class="product-preview__price">От 4000 ₽</p>
+            <p class="product-preview__category">Гостиница</p>
+            <p class="product-preview__price">От 4000 ₽</p>
 
-              <a  class="product-preview__button button button--secondary button--size-s" href="#">подробнее</a>
-              <button class="product-preview__button button button--primary button--size-s" type="button" >в избранное</button>
+            <a  class="product-preview__button button button--secondary button--size-s" href="#">подробнее</a>
+            <button class="product-preview__button button button--primary button--size-s" type="button" >в избранное</button>
 
-              <div class="product-preview__rating rating">
-                <div class="rating__star">
-                 <span class="rating__icon"></span>
-                 <span class="rating__icon"></span>
-                 <span class="rating__icon"></span>
-                 <span class="rating__icon"></span>
-                </div>
-
-                <p class="rating__label">Рейтинг: 8,5</p>
+            <div class="product-preview__rating rating">
+              <div class="rating__star">
+                <span class="rating__icon"></span>
+                <span class="rating__icon"></span>
+                <span class="rating__icon"></span>
+                <span class="rating__icon"></span>
               </div>
-            </article>
-          </li>
 
-          <li class="catalog__item">
-            <article class="product-preview">
-              <a class="product-preview__link" href="#">
-                <h3 class="product-preview__title">Villas at Poco Diablo</h3>
+              <p class="rating__label">Рейтинг: 8,5</p>
+            </div>
+          </article>
 
-                <img class="product-preview__image" src="images/hotel-2.jpg" width="300" height="212" alt="" >
-              </a>
+          <article class="product-preview">
+            <a class="product-preview__link" href="#">
+              <h3 class="product-preview__title">Villas at Poco Diablo</h3>
 
-              <p class="product-preview__category">Гостиница</p>
-              <p class="product-preview__price">От 5000 ₽</p>
+              <img class="product-preview__image" src="images/hotel-2.jpg" width="300" height="212" alt="" >
+            </a>
 
-              <a  class="product-preview__button button button--secondary button--size-s" href="#">подробнее</a>
-              <button class="product-preview__button button button--primary button--active button--size-s" type="button" >в избранном</button>
+            <p class="product-preview__category">Гостиница</p>
+            <p class="product-preview__price">От 5000 ₽</p>
 
-              <div class="product-preview__rating rating">
-                <div class="rating__star">
-                  <span class="rating__icon"></span>
-                  <span class="rating__icon"></span>
-                  <span class="rating__icon"></span>
-                  <span class="rating__icon"></span>
-                </div>
+            <a  class="product-preview__button button button--secondary button--size-s" href="#">подробнее</a>
+            <button class="product-preview__button button button--primary button--active button--size-s" type="button" >в избранном</button>
 
-                <p class="rating__label">Рейтинг: 9,2</p>
+            <div class="product-preview__rating rating">
+              <div class="rating__star">
+                <span class="rating__icon"></span>
+                <span class="rating__icon"></span>
+                <span class="rating__icon"></span>
+                <span class="rating__icon"></span>
               </div>
-            </article>
-          </li>
 
-          <li class="catalog__item">
-            <article class="product-preview">
-              <a class="product-preview__link" href="#">
-                <h3 class="product-preview__title">Desert Quail Inn</h3>
+              <p class="rating__label">Рейтинг: 9,2</p>
+            </div>
+          </article>
 
-                <img class="product-preview__image" src="images/hotel-3.jpg" width="300" height="212" alt="" >
-              </a>
+          <article class="product-preview">
+            <a class="product-preview__link" href="#">
+              <h3 class="product-preview__title">Desert Quail Inn</h3>
 
-              <p class="product-preview__category">Гостиница</p>
-              <p class="product-preview__price">От 2500 ₽</p>
+              <img class="product-preview__image" src="images/hotel-3.jpg" width="300" height="212" alt="" >
+            </a>
 
-              <a  class="product-preview__button button button--secondary button--size-s" href="#">подробнее</a>
-              <button class="product-preview__button button button--primary button--size-s" type="button" >в избранное</button>
+            <p class="product-preview__category">Гостиница</p>
+            <p class="product-preview__price">От 2500 ₽</p>
 
-              <div class="product-preview__rating rating">
-                <div class="rating__star">
-                  <span class="rating__icon"></span>
-                  <span class="rating__icon"></span>
-                  <span class="rating__icon"></span>
-                </div>
+            <a  class="product-preview__button button button--secondary button--size-s" href="#">подробнее</a>
+            <button class="product-preview__button button button--primary button--size-s" type="button" >в избранное</button>
 
-                <p class="rating__label">Рейтинг: 6,9</p>
+            <div class="product-preview__rating rating">
+              <div class="rating__star">
+                <span class="rating__icon"></span>
+                <span class="rating__icon"></span>
+                <span class="rating__icon"></span>
               </div>
-            </article>
-          </li>
 
-          <li class="catalog__item">
-            <article class="product-preview">
-              <a class="product-preview__link" href="#">
-                <h3 class="product-preview__title">GreenTree Inn</h3>
+              <p class="rating__label">Рейтинг: 6,9</p>
+            </div>
+          </article>
 
-                <img class="product-preview__image" src="images/hotel-4.jpg" width="300" height="212" alt="" >
-              </a>
+          <article class="product-preview">
+            <a class="product-preview__link" href="#">
+              <h3 class="product-preview__title">GreenTree Inn</h3>
 
-              <p class="product-preview__category">Гостиница</p>
-              <p class="product-preview__price">От 1500 ₽</p>
+              <img class="product-preview__image" src="images/hotel-4.jpg" width="300" height="212" alt="" >
+            </a>
 
-              <a  class="product-preview__button button button--secondary button--size-s" href="#">подробнее</a>
-              <button class="product-preview__button button button--primary button--size-s" type="button" >в избранное</button>
+            <p class="product-preview__category">Гостиница</p>
+            <p class="product-preview__price">От 1500 ₽</p>
 
-              <div class="product-preview__rating rating">
-                <div class="rating__star">
-                  <span class="rating__icon"></span>
-                  <span class="rating__icon"></span>
-                </div>
+            <a  class="product-preview__button button button--secondary button--size-s" href="#">подробнее</a>
+            <button class="product-preview__button button button--primary button--size-s" type="button" >в избранное</button>
 
-                <p class="rating__label">Рейтинг: 5,0</p>
+            <div class="product-preview__rating rating">
+              <div class="rating__star">
+                <span class="rating__icon"></span>
+                <span class="rating__icon"></span>
               </div>
-            </article>
-          </li>
-        </ul>
+
+              <p class="rating__label">Рейтинг: 5,0</p>
+            </div>
+          </article>
+        </div>
 
         <ul class="catalog-products__pagination pagination">
           <li class="pagination__item">
