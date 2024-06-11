@@ -213,6 +213,98 @@
           </svg>
         </a>
       </footer>
+
+      <div class="modal">
+        <div class="modal__content">
+          <button class="modal__close" type="button" title="Закрыть">
+            <span class="visually-hidden">Закрыть</span>
+          </button>
+
+          <section>
+            <h2 class="modal__title">Поиск гостиницы в Седоне</h2>
+
+            <form class="modal__form appointment-form" action="https://echo.htmlacademy.ru" method="post" >
+              <div class="appointment-form__field-group appointment-form__field-date">
+                <label class="appointment-form__label" for="arrival-date">Дата заезда:</label>
+
+                <div class="appointment-form__input-date-wrapper">
+                  <input class="appointment-form__input appointment-form__input-date" type="text" name="arrival-date" id="arrival-date" value="27 апреля 2020">
+
+                  <span class="appointment-form__text appointment-form__text--danger">Мы не можем отправить вас в прошлое.</span>
+                </div>
+              </div>
+
+              <div class="appointment-form__field-group appointment-form__field-date">
+                <label class="appointment-form__label" for="leave-date">Дата выезда:</label>
+
+                <div class="appointment-form__input-date-wrapper">
+                  <input class="appointment-form__input appointment-form__input-date" type="text" name="leave-date" id="leave-date" value="1 сентября 2023">
+
+                  <span class="appointment-form__text">На эти даты есть свободные номера. Пока есть.</span>
+                </div>
+              </div>
+
+              <div class="appointment-form__field-group appointment-form__field-count">
+                <label class="appointment-form__label" for="parent-field">Взрослые:</label>
+
+                <div class="appointment-form__input-count-wrapper">
+                  <button class="appointment-form__button-minus button-input" type="button">
+                    <svg class="button-input__icon" width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 0L0 2L14 2V0L0 0Z" fill="#000000" />
+                    </svg>
+
+                    <span class="visually-hidden">Уменьшить</span>
+                  </button>
+
+                  <input class="appointment-form__input appointment-form__input-count" type="text" name="parent-count" id="parent-field" value="2">
+
+                  <button class="appointment-form__button-plus button-input" type="button">
+                    <svg class="button-input__icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none"><path fill="#000" d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z"/></svg>
+
+                    <span class="visually-hidden">Увеличить</span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="appointment-form__field-group appointment-form__field-count">
+
+                <span class="appointment-form__label-wrapper">
+                  <label class="appointment-form__label" for="children-field">Дети:</label>
+
+                  <span class="appointment-form__tooltip tooltip">
+                    <button class="tooltip__toggle" type="button">
+                      <span class="visually-hidden">Показать подсказку</span>
+                    </button>
+
+                    <span class="tooltip__text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                  </span>
+                </span>
+
+                <div class="appointment-form__input-count-wrapper">
+                  <button class="appointment-form__button-minus button-input" type="button">
+                    <svg class="button-input__icon" width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 0L0 2L14 2V0L0 0Z" fill="#000000" />
+                    </svg>
+
+                    <span class="visually-hidden">Уменьшить</span>
+                  </button>
+
+                  <input class="appointment-form__input appointment-form__input-count" type="text" name="children-count" id="children-field" value="2">
+
+                  <button class="appointment-form__button-plus button-input" type="button">
+                    <svg class="button-input__icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none"><path fill="#000" d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z"/></svg>
+
+                    <span class="visually-hidden">Увеличить</span>
+                  </button>
+                </div>
+              </div>
+
+              <button class="appointment-form__button button button--primary button--size-l" type="submit">Найти</button>
+            </form>
+          </section>
+        </div>
+      </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
