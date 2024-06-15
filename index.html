@@ -63,9 +63,9 @@
               <p class="reasons__description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
             </div>
 
-            <ul class="reasons__list reasons__list--stripped">
-              <li class="reasons__item  reasons__item--wide">
-                <div class="reasons__item-content reasons__item-content--theme-accent">
+            <ul class="reasons__list">
+              <li class="reasons__item reasons__item--theme-accent reasons__item--wide">
+                <div class="reasons__item-content ">
                   <h3 class="reasons__item-title">Настоящий городок</h3>
 
                   <p class="reasons__item-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
@@ -97,8 +97,8 @@
                   <p class="reasons__item-description">Большинство едет в Гранд Каньон и толпится там</p>
                 </div>
               </li>
-              <li class="reasons__item reasons__item--wide reasons__item--direction-reverse">
-                <div class="reasons__item-content reasons__item-content--theme-accent">
+              <li class="reasons__item reasons__item--theme-accent reasons__item--wide reasons__item--direction-reverse">
+                <div class="reasons__item-content">
                   <h3 class="reasons__item-title">Там есть
                     мост дьявола</h3>
 
@@ -110,7 +110,7 @@
             </ul>
           </section>
 
-          <section class="recommendations">
+          <section class="recommendations" data-test="service">
             <h2 class="visually-hidden">Наши рекомендации</h2>
 
             <div class="recommendations__content">
@@ -122,19 +122,19 @@
               <li class="recommendations__item  recommendations__item--house">
                 <h3 class="recommendations__item-title">Жильё</h3>
 
-                <p class="recommendations__item-description">Рекомендуем пожить в настоящем мотеле,
+                <p class="recommendations__item-description">Рекомендуем пожить <br> в настоящем мотеле, <br>
                   всё как в кино!</p>
               </li>
               <li class="recommendations__item  recommendations__item--burger">
                 <h3 class="recommendations__item-title">Еда</h3>
 
-                <p class="recommendations__item-description">Всегда заказывайте
+                <p class="recommendations__item-description">Всегда заказывайте <br>
                   топовый фирменный бургер, вы не разочаруетесь!</p>
               </li>
               <li class="recommendations__item  recommendations__item--gift">
                 <h3 class="recommendations__item-title">Сувениры</h3>
 
-                <p class="recommendations__item-description">Не только китайского,
+                <p class="recommendations__item-description">Не только китайского, <br>
                   но и настоящего местного производства!</p>
               </li>
             </ul>
@@ -144,7 +144,7 @@
             <h2 class="visually-hidden">Забронировать гостиницу</h2>
             <p class="hotels__title">Заинтересовались?</p>
 
-            <p class="hotels__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+            <p class="hotels__text">Укажите предполагаемые даты поездки, <br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
 
             <button class="hotels__button button button--secondary button--size-m" type="button" >Поиск гостиницы в седоне</button>
           </section>
@@ -272,11 +272,10 @@
                   <label class="appointment-form__label" for="children-field">Дети:</label>
 
                   <span class="appointment-form__tooltip tooltip">
-                    <button class="tooltip__toggle" type="button">
-                      <span class="visually-hidden">Показать подсказку</span>
+                    <button class="tooltip__toggle" type="button" aria-labelledby="tooltip-label">
                     </button>
 
-                    <span class="tooltip__text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                    <span class="tooltip__text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
                   </span>
                 </span>
 
