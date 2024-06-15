@@ -1760,7 +1760,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 0;
+  z-index: 4;
 
   display: none;
   width: 100%;
@@ -1775,7 +1775,6 @@
 
 .modal__content {
   position: relative;
-  z-index: 7;
 
   box-sizing: border-box;
   width: 717px;
