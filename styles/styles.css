@@ -1694,6 +1694,8 @@
   color: var(--texts-texts-basic);
   text-transform: uppercase;
   text-decoration: none;
+
+  justify-self: center;
 }
 
 .page-footer__phone:hover,
@@ -1846,6 +1848,7 @@
 .page__content-header {
   padding: 35px 70px 71px;
 
+  background-color: #946554;
   background-image: url("../images/bg-inner.jpg");
   background-repeat: no-repeat;
   background-position: center 0;
