@@ -1841,7 +1841,7 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 117%;
-  font-family: var(--font-family);
+  font-family: var(--font-family), sans-serif;
   color: var(--texts-second);
 
   background-color: var(--forms-elements-2);
@@ -1905,7 +1905,7 @@
 }
 
 :root {
-  --font-family: "PT Sans", sans-serif;
+  --font-family: "PT Sans";
 
   --texts-second: #333333;
   --texts-error: #ff5757;
