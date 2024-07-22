@@ -70,7 +70,7 @@
 
             <div class="filters-form__options-list">
               <label class="filters-form__option checkbox-control">
-                <input class="checkbox-control__input" type="checkbox" name="pool" checked>
+                <input class="checkbox-control__input" type="checkbox" name="pool" checked disabled>
                 <span class="checkbox-control__label">Бассейн</span>
               </label>
 
@@ -91,7 +91,7 @@
 
             <div class="filters-form__options-list">
               <label class="filters-form__option radio-control">
-                <input class="radio-control__input" type="radio" name="type-house" value="hotel" checked>
+                <input class="radio-control__input" type="radio" name="type-house" value="hotel" checked disabled>
                 <span class="radio-control__label">Гостиница</span>
               </label>
 
@@ -114,12 +114,12 @@
               <div class="filter-range__input-interval">
                 <div class="filter-range__input-wrapper">
                   <label class="filter-range__input-caption" for="price-min-field">от</label>
-                  <input class="filter-range__input filter-range__input--cropping-left" type="text" name="price-min" id="price-min-field"  placeholder="0">
+                  <input class="filter-range__input filter-range__input--cropping-left" type="text" name="price-min" id="price-min-field"  placeholder="0" value="0">
                 </div>
 
                 <div class="filter-range__input-wrapper">
                   <label class="filter-range__input-caption" for="price-max-field">до</label>
-                  <input class="filter-range__input filter-range__input--cropping-right" type="text" name="price-max" id="price-max-field"  placeholder="9000">
+                  <input class="filter-range__input filter-range__input--cropping-right" type="text" name="price-max" id="price-max-field"  placeholder="9000" value="9000">
                 </div>
               </div>
 
@@ -256,7 +256,7 @@
 
         <ul class="catalog-products__pagination pagination">
           <li class="pagination__item">
-            <a class="pagination__link pagination__link--active" href="#">1</a>
+            <a class="pagination__link pagination__link--active">1</a>
           </li>
           <li class="pagination__item">
             <a class="pagination__link" href="#">2</a>
