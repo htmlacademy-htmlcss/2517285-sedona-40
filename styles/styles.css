@@ -986,14 +986,10 @@
 }
 
 .appointment-form__input:hover {
-  color: rgba(0, 0, 0, 0.6);
-
   background-color: #e6e6e6;
 }
 
 .appointment-form__input:focus-visible {
-  color: rgba(0, 0, 0, 0.6);
-
   background-color: #e6e6e6;
   outline: 3px solid var(--icons-second);
 }
