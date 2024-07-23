@@ -791,14 +791,10 @@
 }
 
 .filter-range__input:not(:disabled):hover {
-  color: rgba(0, 0, 0, 0.6);
-
   background: #e6e6e6;
 }
 
 .filter-range__input:focus-visible {
-  color: rgba(0, 0, 0, 0.6);
-
   background: #e6e6e6;
   outline: 3px solid var(--icons-second);
 }
