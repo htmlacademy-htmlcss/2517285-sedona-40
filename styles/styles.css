@@ -160,6 +160,8 @@
 }
 
 .button-ghost:disabled {
+  color: rgba(255, 255, 255, 0.1);
+
   cursor: default;
 
   pointer-events: none;
@@ -538,6 +540,7 @@
   font-family: inherit;
   color: inherit;
 
+  background-color: var(--texts-background-deafault);
   background-image: url("../images/arrow-bottom.svg");
   background-repeat: no-repeat;
   background-position: right 18px top 18px;
@@ -986,10 +989,14 @@
 }
 
 .appointment-form__input:hover {
+  color: rgba(0, 0, 0, 0.6);
+
   background-color: #e6e6e6;
 }
 
 .appointment-form__input:focus-visible {
+  color: rgba(0, 0, 0, 0.6);
+
   background-color: #e6e6e6;
   outline: 3px solid var(--icons-second);
 }
@@ -1060,6 +1067,8 @@
 }
 
 .appointment-form__button {
+  margin-top: 25px;
+
   grid-column: span 2;
 }
 
@@ -1696,9 +1705,12 @@
   width: 282px;
 }
 
-.page-footer__phone {
+.page-footer__contacts {
+  width: 500px;
   margin-left: 57px;
+}
 
+.page-footer__phone {
   font-size: 40px;
   line-height: 100%;
   text-align: center;
@@ -1912,7 +1924,7 @@
 }
 
 :root {
-  --font-family: "PT Sans";
+  --font-family: "PT Sans", sans-serif;
 
   --texts-second: #333333;
   --texts-error: #ff5757;
